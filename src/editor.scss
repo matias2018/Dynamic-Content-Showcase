@@ -1,0 +1,40 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-dcsb-. {
+	border: 1px dotted #f00;
+}
+.dcsb-dynamic-content-list {
+    .dcsb-list-item {
+        display: flex; // For side-by-side thumbnail and content
+        gap: 15px;    // Space between thumbnail and content
+        margin-bottom: 1.5em;
+        padding-bottom: 1.5em;
+        border-bottom: 1px solid #eee;
+        &:last-child {
+            border-bottom: none;
+        }
+
+        .dcsb-thumbnail {
+            flex-shrink: 0; // Prevent thumbnail from shrinking
+            width: 100px;   // Example fixed width
+            height: 100px;  // Example fixed height
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; // Crop image to fit
+            }
+        }
+
+        .dcsb-content {
+            flex-grow: 1; // Allow content to take remaining space
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+    }
+}
