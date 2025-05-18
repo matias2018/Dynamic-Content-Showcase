@@ -6,7 +6,7 @@
     "title": "Dynamic Content Showcase",
     "category": "widgets",
     "icon": "excerpt-view",
-    "description": "Display posts, pages, or custom content dynamically with filtering options.", // Updated description
+    "description": "Display posts, pages, or custom content dynamically with filtering options.",
     "keywords": ["posts", "dynamic", "content", "showcase", "query", "filter"],
     "attributes": {
         "postType": {
@@ -33,7 +33,7 @@
             "type": "array",
             "default": [],
             "items": {
-                "type": "number" // We'll store term IDs
+                "type": "number"
             }
         },
         "showExcerpt": {
